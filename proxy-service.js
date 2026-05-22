@@ -52,6 +52,13 @@ const ROUTES = [
     targetPort: process.env.RITA4_TARGET_PORT,
     delaySendMs: parseInt(process.env.RITA4_DELAY_MS) || 15000,
   },
+  {
+    name: "RITA-5",
+    listenPort: process.env.RITA5_LISTEN_PORT,
+    targetHost: process.env.RITA5_TARGET_HOST,
+    targetPort: process.env.RITA5_TARGET_PORT,
+    delaySendMs: parseInt(process.env.RITA5_DELAY_MS) || 15000,
+  },
 ];
 
 // ============================================================
